@@ -13,6 +13,9 @@ viewmodel = "2.4.0"
 hilt = "2.44.2"
 constraintlayout = "2.1.4"
 datastore = "1.0.0"
+legacy-support-v4 = "1.0.0"
+lifecycle-livedata-ktx = "2.6.1"
+fragment-ktx = "1.5.6"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -23,6 +26,7 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+navigation-dynamic-features = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "navigation" }
 
 lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "viewmodel" }
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewmodel" }
@@ -34,6 +38,9 @@ coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-c
 coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 datastore = { group = "androidx.datastore", name = "datastore-core", version.ref = "datastore" }
+androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacy-support-v4" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle-livedata-ktx" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment-ktx" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
@@ -41,7 +48,7 @@ org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.re
 com-google-dagger-hilt-android= { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 
 [bundles]
-navigation = ["navigation-fragment", "navigation-ui"]
+navigation = ["navigation-fragment", "navigation-ui", "navigation-dynamic-features"]
 viewmodel = ["lifecycle-viewmodel", "lifecycle-viewmodel-ktx"]
 hilt = ["hilt-android", "hilt-compiler"]
 coroutines = ["coroutine-core", "coroutine-android"]
